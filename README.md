@@ -22,7 +22,7 @@
 
 Simply tell your AI assistant:
 
-> "Please look at https://github.com/koreal6803/finlab-claude-plugin and install the FinLab skill for me"
+> "Please look at https://github.com/koreal6803/finlab-ai-plugin and install the FinLab skill for me"
 
 This works with **Claude Code**, **ChatGPT Codex CLI**, **Gemini CLI**, and other AI coding assistants.
 
@@ -60,7 +60,7 @@ This works with **Claude Code**, **ChatGPT Codex CLI**, **Gemini CLI**, and othe
 
 ```bash
 # Add marketplace
-/plugin marketplace add koreal6803/finlab-claude-plugin
+/plugin marketplace add koreal6803/finlab-ai-plugin
 
 # Install plugin
 /plugin install finlab-plugin@finlab-plugins
@@ -69,8 +69,8 @@ This works with **Claude Code**, **ChatGPT Codex CLI**, **Gemini CLI**, and othe
 ### Option 2: ChatGPT Codex CLI
 
 ```bash
-git clone https://github.com/koreal6803/finlab-claude-plugin.git
-cd finlab-claude-plugin
+git clone https://github.com/koreal6803/finlab-ai-plugin.git
+cd finlab-ai-plugin
 ```
 
 Then tell Codex:
@@ -85,8 +85,8 @@ Then tell Codex:
 npm install -g skill-porter
 
 # Clone and convert
-git clone https://github.com/koreal6803/finlab-claude-plugin.git
-cd finlab-claude-plugin
+git clone https://github.com/koreal6803/finlab-ai-plugin.git
+cd finlab-ai-plugin
 skill-porter convert ./finlab-plugin/skills/finlab --to gemini --output ./finlab-gemini-extension
 ```
 

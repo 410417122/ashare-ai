@@ -22,7 +22,7 @@
 
 只要告訴你的 AI 助手：
 
-> 「請查看 https://github.com/koreal6803/finlab-claude-plugin 並幫我安裝 FinLab skill」
+> 「請查看 https://github.com/koreal6803/finlab-ai-plugin 並幫我安裝 FinLab skill」
 
 適用於 **Claude Code**、**ChatGPT Codex CLI**、**Gemini CLI** 及其他 AI 程式助手。
 
@@ -60,7 +60,7 @@
 
 ```bash
 # 新增 marketplace
-/plugin marketplace add koreal6803/finlab-claude-plugin
+/plugin marketplace add koreal6803/finlab-ai-plugin
 
 # 安裝 plugin
 /plugin install finlab-plugin@finlab-plugins
@@ -69,8 +69,8 @@
 ### 方式二：ChatGPT Codex CLI
 
 ```bash
-git clone https://github.com/koreal6803/finlab-claude-plugin.git
-cd finlab-claude-plugin
+git clone https://github.com/koreal6803/finlab-ai-plugin.git
+cd finlab-ai-plugin
 ```
 
 然後告訴 Codex：
@@ -85,8 +85,8 @@ cd finlab-claude-plugin
 npm install -g skill-porter
 
 # Clone 並轉換
-git clone https://github.com/koreal6803/finlab-claude-plugin.git
-cd finlab-claude-plugin
+git clone https://github.com/koreal6803/finlab-ai-plugin.git
+cd finlab-ai-plugin
 skill-porter convert ./finlab-plugin/skills/finlab --to gemini --output ./finlab-gemini-extension
 ```
 
