@@ -1,0 +1,46 @@
+name: Deploy MCP Server to Cloudflare Workers
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'finlab-plugin/skills/finlab/**'
+      - 'workers/**'
+      - 'mcp-server/**'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./workers
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install uv
+        run: pip install uv
+
+      - name: Install pywrangler
+        run: uv tool install workers-py
+
+      - name: Build documentation into worker
+        run: python build.py
+
+      - name: Deploy to Cloudflare Workers
+        run: ~/.local/bin/pywrangler deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

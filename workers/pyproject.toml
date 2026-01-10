@@ -1,0 +1,11 @@
+[project]
+name = "finlab-mcp-worker"
+version = "1.0.0"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp>=1.0.0",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
