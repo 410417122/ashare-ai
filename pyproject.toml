@@ -1,0 +1,70 @@
+[project]
+name = "finlab-claude-plugin"
+version = "1.0.0"
+description = "FinLab plugin for Claude Code, Cursor, and Antigravity IDE - provides Taiwan stock market quantitative trading documentation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "FinLab Community", email = "support@finlab.tw"}
+]
+keywords = [
+    "finlab",
+    "mcp",
+    "claude",
+    "cursor",
+    "antigravity",
+    "taiwan-stock",
+    "quantitative-trading",
+    "backtesting"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+dependencies = [
+    "mcp>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "ruff>=0.1.0",
+]
+
+[project.scripts]
+finlab-mcp = "mcp_server:main"
+
+[project.urls]
+Homepage = "https://github.com/koreal6803/finlab-claude-plugin"
+Documentation = "https://ai.finlab.tw"
+Repository = "https://github.com/koreal6803/finlab-claude-plugin"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mcp_server*"]
+
+[tool.setuptools.package-dir]
+mcp_server = "mcp-server"
+
+[tool.setuptools.package-data]
+"*" = ["*.md"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+ignore = ["E501"]

@@ -1,0 +1,14 @@
+# Cloudflare Workers configuration for FinLab MCP Server
+# See: https://developers.cloudflare.com/workers/wrangler/configuration/
+
+name = "finlab-mcp"
+main = "src/main.py"
+compatibility_date = "2025-01-01"
+
+# Python Workers settings
+[build]
+command = "python build.py"
+
+# Environment variables (optional)
+[vars]
+SERVER_NAME = "finlab-docs"

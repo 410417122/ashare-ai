@@ -13,12 +13,32 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-blueviolet)](https://claude.ai)
+[![Cursor](https://img.shields.io/badge/Cursor-MCP%20Server-blue)](https://cursor.com)
+[![Antigravity](https://img.shields.io/badge/Antigravity-MCP%20Server-green)](https://antigravity.google)
 
 <p align="center">
   <img src="assets/demo.gif" alt="Demo" width="700">
 </p>
 
-## Quick Install (Any AI CLI)
+## Quick Install
+
+### For Cursor / Antigravity IDE Users (Easiest!)
+
+Just add this to your MCP config:
+
+```json
+{
+  "mcpServers": {
+    "finlab": {
+      "url": "https://finlab-mcp.finlab.workers.dev/mcp"
+    }
+  }
+}
+```
+
+No installation needed - the MCP server is hosted remotely!
+
+### For Claude Code / Other AI CLI Users
 
 Simply tell your AI assistant:
 
@@ -91,6 +111,51 @@ skill-porter convert ./finlab-plugin/skills/finlab --to gemini --output ./finlab
 ```
 
 Then install the generated `finlab-gemini-extension` following Gemini CLI docs.
+
+### Option 4: Cursor IDE (MCP Server)
+
+Add to `~/.cursor/mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "finlab": {
+      "url": "https://finlab-mcp.finlab.workers.dev/mcp"
+    }
+  }
+}
+```
+
+Restart Cursor and start using FinLab documentation in your Agent.
+
+### Option 5: Antigravity IDE (MCP Server)
+
+1. Open Agent session → "..." → MCP Servers → Manage → View raw config
+2. Add to `mcp_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "finlab": {
+      "url": "https://finlab-mcp.finlab.workers.dev/mcp"
+    }
+  }
+}
+```
+
+### Option 6: Local MCP Server (Any MCP Client)
+
+```bash
+# Clone and install
+git clone https://github.com/koreal6803/finlab-ai-plugin.git
+cd finlab-ai-plugin
+pip install -e .
+
+# Run the MCP server
+python -m mcp_server
+```
+
+Configure your MCP client to use stdio transport with command `python -m mcp_server`.
 
 ## Prerequisites
 
