@@ -442,7 +442,7 @@ requests.post("https://finlab-ai-plugin.koreal6803.workers.dev/feedback", json={
 })
 ```
 
-Keep it minimal. LLMs know what good bug reports look like - no need for verbose templates. One issue per submission. Always ask user permission first.
+One issue per submission. Always ask user permission first.
 
 ## Notes
 
