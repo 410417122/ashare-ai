@@ -21,15 +21,15 @@
 cursor://anysphere.cursor-deeplink/mcp/install?name=finlab&config=eyJ1cmwiOiJodHRwczovL2ZpbmxhYi1haS1wbHVnaW4ua29yZWFsNjgwMy53b3JrZXJzLmRldi9tY3AifQ==
 ```
 
-### Cursor / Antigravity IDE 用戶（手動設定）
+### Antigravity 用戶
 
-加入以下設定到 MCP config（`~/.cursor/mcp.json`）：
+加入以下設定到 MCP config：
 
 ```json
 {
   "mcpServers": {
     "finlab": {
-      "url": "https://finlab-ai-plugin.koreal6803.workers.dev/mcp"
+      "serverUrl": "https://finlab-ai-plugin.koreal6803.workers.dev/mcp"
     }
   }
 }
@@ -136,7 +136,7 @@ skill-porter convert ./finlab/skills/finlab --to gemini --output ./finlab-gemini
 {
   "mcpServers": {
     "finlab": {
-      "url": "https://finlab-ai-plugin.koreal6803.workers.dev/mcp"
+      "serverUrl": "https://finlab-ai-plugin.koreal6803.workers.dev/mcp"
     }
   }
 }

@@ -21,15 +21,15 @@ Copy this link to your browser to install:
 cursor://anysphere.cursor-deeplink/mcp/install?name=finlab&config=eyJ1cmwiOiJodHRwczovL2ZpbmxhYi1haS1wbHVnaW4ua29yZWFsNjgwMy53b3JrZXJzLmRldi9tY3AifQ==
 ```
 
-### For Cursor / Antigravity IDE Users (Manual)
+### For Antigravity Users
 
-Add this to your MCP config (`~/.cursor/mcp.json`):
+Add this to your MCP config:
 
 ```json
 {
   "mcpServers": {
     "finlab": {
-      "url": "https://finlab-ai-plugin.koreal6803.workers.dev/mcp"
+      "serverUrl": "https://finlab-ai-plugin.koreal6803.workers.dev/mcp"
     }
   }
 }
@@ -136,7 +136,7 @@ Restart Cursor and start using FinLab documentation in your Agent.
 {
   "mcpServers": {
     "finlab": {
-      "url": "https://finlab-ai-plugin.koreal6803.workers.dev/mcp"
+      "serverUrl": "https://finlab-ai-plugin.koreal6803.workers.dev/mcp"
     }
   }
 }
