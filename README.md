@@ -79,8 +79,24 @@ This works with **Claude Code**, **ChatGPT Codex CLI**, **Gemini CLI**, and othe
 
 ### Option 1: Claude Code
 
+**Install:**
+
 ```bash
 claude plugin marketplace add koreal6803/finlab-ai
+claude plugin install finlab-plugin@finlab-plugins
+```
+
+**Update:**
+
+```bash
+# 1. Uninstall plugin
+claude plugin uninstall finlab-plugin@finlab-plugins
+
+# 2. Update marketplace
+claude plugin marketplace remove finlab-plugins
+claude plugin marketplace add koreal6803/finlab-ai
+
+# 3. Reinstall plugin
 claude plugin install finlab-plugin@finlab-plugins
 ```
 
