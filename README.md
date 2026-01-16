@@ -1,8 +1,10 @@
+<div align="center">
+
 [English](README.md) | [繁體中文](README.zh-TW.md)
 
 # FinLab AI
 
-> Your AI's shortcut to mass-produce alpha-generating quant strategies.
+> Let AI discover your next alpha.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-blueviolet)](https://claude.ai)
@@ -10,6 +12,8 @@
 [![Antigravity](https://img.shields.io/badge/Antigravity-MCP%20Server-green)](https://antigravity.google)
 
 <img src="assets/demo.gif" alt="Demo" width="700">
+
+</div>
 
 ## Quick Install
 
@@ -31,11 +35,11 @@ cursor://anysphere.cursor-deeplink/mcp/install?name=finlab&config=eyJ1cmwiOiJodH
 
 ## Features
 
-- **Comprehensive Data Access** - 900+ data columns: prices, financials, revenue, valuations, institutional trading
-- **Strategy Development** - Factor-based strategies using FinLabDataFrame methods
-- **Backtesting Engine** - Risk management, stop-loss, take-profit, position sizing
-- **Factor Analysis** - IC calculation, Shapley values, centrality analysis
-- **Machine Learning** - Feature engineering and label generation for ML models
+- **900+ Data Columns** — Prices, financials, revenue, valuations, institutional flows
+- **Strategy Builder** — Factor-based stock selection with FinLabDataFrame
+- **Backtesting** — Stop-loss, take-profit, position sizing, risk management
+- **Factor Analysis** — IC, Shapley values, centrality metrics
+- **ML Ready** — Feature engineering and label generation
 
 ## Examples
 

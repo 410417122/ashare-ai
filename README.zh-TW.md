@@ -1,8 +1,10 @@
+<div align="center">
+
 [English](README.md) | [繁體中文](README.zh-TW.md)
 
 # FinLab AI
 
-> 給 AI 裝上量化大腦。
+> 讓 AI 幫你發現下一個 Alpha。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-blueviolet)](https://claude.ai)
@@ -10,6 +12,8 @@
 [![Antigravity](https://img.shields.io/badge/Antigravity-MCP%20Server-green)](https://antigravity.google)
 
 <img src="assets/demo.gif" alt="Demo" width="700">
+
+</div>
 
 ## 快速安裝
 
@@ -31,11 +35,11 @@ cursor://anysphere.cursor-deeplink/mcp/install?name=finlab&config=eyJ1cmwiOiJodH
 
 ## 功能特色
 
-- **完整數據存取** - 900+ 欄位：股價、財報、營收、估值、法人籌碼
-- **策略開發** - 使用 FinLabDataFrame 方法建立因子策略
-- **回測引擎** - 風險管理、停損、停利、部位控制
-- **因子分析** - IC 計算、Shapley 值、中心性分析
-- **機器學習** - 特徵工程與標籤生成
+- **900+ 數據欄位** — 股價、財報、營收、估值、法人籌碼
+- **策略建構** — 使用 FinLabDataFrame 進行因子選股
+- **回測引擎** — 停損、停利、部位控制、風險管理
+- **因子分析** — IC、Shapley 值、中心性指標
+- **ML 就緒** — 特徵工程與標籤生成
 
 ## 範例
 
