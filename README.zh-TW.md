@@ -25,7 +25,7 @@ cursor://anysphere.cursor-deeplink/mcp/install?name=finlab&config=eyJ1cmwiOiJodH
 
 只要告訴你的 AI 助手：
 
-> 「請查看 https://github.com/koreal6803/finlab-ai 並幫我安裝 FinLab plugin」
+> 「請幫我安裝 https://github.com/koreal6803/finlab-ai」
 
 就這樣。AI 會幫你處理好一切。
 

@@ -25,7 +25,7 @@ cursor://anysphere.cursor-deeplink/mcp/install?name=finlab&config=eyJ1cmwiOiJodH
 
 Simply tell your AI assistant:
 
-> "Please look at https://github.com/koreal6803/finlab-ai and install the FinLab plugin for me"
+> "Please install https://github.com/koreal6803/finlab-ai"
 
 That's it. Your AI will handle the rest.
 
