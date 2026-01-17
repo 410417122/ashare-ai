@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(ralph-loop:ralph-loop)",
+      "Skill(planning-with-files:planning-with-files)",
+      "mcp__plugin_context7_context7__resolve-library-id",
+      "mcp__plugin_context7_context7__query-docs",
+      "Bash(dir /s /b \"D:\\\\Quantification\\\\finlab-ai\\\\ashare-plugin\")",
+      "Bash(python:*)",
+      "Bash(dir /s /b \"D:\\\\Quantification\\\\finlab-ai\\\\*plugin*\")",
+      "Bash(claude skill install:*)",
+      "Bash(claude skill --help:*)",
+      "Bash(claude plugin --help:*)",
+      "Bash(claude plugin install --help:*)",
+      "Bash(claude plugin marketplace --help:*)",
+      "Bash(claude plugin marketplace add \"D:/Quantification/finlab-ai/ashare-plugin\")",
+      "Bash(claude plugin marketplace:*)",
+      "Bash(dir \"C:\\\\Users\\\\41041\\\\.claude\" /b)",
+      "Bash(dir \"C:\\\\Users\\\\41041\\\\.claude\\\\skills\" /b)",
+      "Bash(dir \"C:\\\\Users\\\\41041\\\\.claude\\\\skills\\\\skill-creator\" /b)",
+      "Bash(xcopy:*)",
+      "Bash(git ls-tree:*)",
+      "Bash(ls -la \"D:\\\\Quantification\\\\finlab-ai\\\\finlab-plugin\\\\skills\\\\finlab\"\" 2>/dev/null || ls -la \"D:/Quantification/finlab-ai/finlab-plugin/skills/finlab/\" 2>/dev/null || echo \"Path not found \")",
+      "Bash(wc:*)",
+      "Skill(planning-with-files)",
+      "Bash(python3:*)"
+    ]
+  }
+}

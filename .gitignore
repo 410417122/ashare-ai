@@ -45,3 +45,18 @@ workers/src/docs.ts
 
 # Secret tokens
 .mcpregistry_*
+
+# Temporary files
+tmpclaude-*
+nul
+*.tmp
+
+# Test files
+test_*.py
+
+# Temporary documentation
+findings.md
+progress.md
+temp_*.md
+transformation_plan.md
+api_mapping.md
