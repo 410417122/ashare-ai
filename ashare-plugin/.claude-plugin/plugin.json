@@ -1,0 +1,5 @@
+{
+  "name": "ashare-plugin",
+  "version": "1.0.0",
+  "description": "A股量化交易 Skill - 使用 Tushare Pro 获取数据，Backtrader 进行回测"
+}
