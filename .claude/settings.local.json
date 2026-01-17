@@ -23,7 +23,18 @@
       "Bash(ls -la \"D:\\\\Quantification\\\\finlab-ai\\\\finlab-plugin\\\\skills\\\\finlab\"\" 2>/dev/null || ls -la \"D:/Quantification/finlab-ai/finlab-plugin/skills/finlab/\" 2>/dev/null || echo \"Path not found \")",
       "Bash(wc:*)",
       "Skill(planning-with-files)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(claude plugin:*)",
+      "Bash(dir:*)",
+      "Bash(findstr:*)",
+      "Bash(echo:*)",
+      "Bash(where:*)",
+      "Bash(cygpath:*)",
+      "Bash(export CLAUDE_CODE_GIT_BASH_PATH=\"D:\\\\Program Files\\\\Git\\\\usr\\\\bin\\\\bash.exe\")",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\n更新安装文档为正确的全局安装方式\n\n- 添加 marketplace 安装步骤\n- 更新为正确的插件安装命令\n- 添加插件更新说明\n- 支持用户通过 marketplace update 更新插件\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push)",
+      "Skill(skill-creator)"
     ]
   }
 }
