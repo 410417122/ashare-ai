@@ -29,6 +29,66 @@ allowed-tools: Read, Grep, Glob, Bash, mcp__plugin_context7_context7__resolve-li
 
 ---
 
+## Tushare Token 配置（重要）
+
+**在首次使用或需要获取数据时，必须先询问用户使用哪种 Token 类型。**
+
+### Token 类型选择
+
+Tushare 支持两种连接方式：
+
+#### 方式一：官方 Token（推荐）
+
+适用于直接从 Tushare Pro 官网注册获取的 token。
+
+```python
+import tushare as ts
+
+# 方法1：使用 set_token（推荐）
+ts.set_token('your_official_token')
+pro = ts.pro_api()
+
+# 方法2：直接传入 token
+pro = ts.pro_api('your_official_token')
+```
+
+#### 方式二：中转 Token
+
+适用于使用中转服务的 token（如 tushare.xiximiao.com）。
+
+```python
+import tushare as ts
+
+pro = ts.pro_api('占位符')
+pro._DataApi__token = '你的中转Token'
+pro._DataApi__http_url = 'http://tushare.xiximiao.com/dataapi'
+```
+
+### 使用流程
+
+1. **首次使用时询问**：
+   ```
+   请问您使用的是：
+   1. Tushare 官方 Token（从 tushare.pro 注册获取）
+   2. 中转 Token（如 tushare.xiximiao.com）
+
+   请告诉我您使用的是哪种 Token，以及您的 Token 值。
+   ```
+
+2. **根据用户选择使用对应的初始化代码**
+
+3. **后续使用时**：
+   - 如果用户已经配置过，直接使用对应的方式
+   - 如果不确定，再次询问用户
+
+### 注意事项
+
+- 不要假设用户使用哪种方式，必须明确询问
+- 官方 Token 和中转 Token 的初始化代码不同，不可混用
+- 中转 Token 需要额外设置 `http_url`
+
+---
+
 ## 核心原则：不确定就查文档
 
 **这是最重要的原则：遇到任何不确定的接口、参数、字段,必须用 context7 查询官方文档。**
