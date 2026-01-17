@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # AShare AI
 
 A股量化交易 Claude Code Skill - 使用 Tushare Pro 获取数据，Backtrader 进行回测
@@ -94,7 +93,3 @@ MIT License
 ## 相关项目
 
 本项目基于 [FinLab AI](https://github.com/koreal6803/finlab-ai) 改造，感谢原作者的贡献。
-=======
-# ashare-ai
- A股量化交易 Claude Code Skill - 使用 Tushare Pro 获取数据，Backtrader 进行回测
->>>>>>> 58772d5d8f246b9c9a8cb7bf7672f0870bf48524
