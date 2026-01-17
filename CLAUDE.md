@@ -35,16 +35,30 @@ ashare-ai/
 
 ## 安装方法
 
-### 从 GitHub 安装
+### 全局安装（推荐）
 
 ```bash
 # 用户只需告诉 Claude：
-# "请安装 https://github.com/410417122/ashare-ai"
+# "请全局安装 https://github.com/410417122/ashare-ai"
 
 # Claude 会自动执行：
-git clone https://github.com/410417122/ashare-ai
-cd ashare-ai
-claude plugin install ashare-plugin
+# 1. 添加 marketplace
+claude plugin marketplace add 410417122/ashare-ai
+
+# 2. 安装插件（默认为全局安装）
+claude plugin install ashare-plugin@ashare-plugins
+```
+
+全局安装后，在任何项目中都可以使用 `/ashare` skill，无需重复安装。
+
+### 更新插件
+
+```bash
+# 更新 marketplace
+claude plugin marketplace update ashare-plugins
+
+# 更新插件
+claude plugin update ashare-plugin@ashare-plugins
 ```
 
 ## 文档文件

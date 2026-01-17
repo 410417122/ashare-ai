@@ -7,15 +7,37 @@ A股量化交易 Claude Code Skill - 使用 Tushare Pro 获取数据，Backtrade
 
 ## 快速安装
 
-### 对于 Claude Code 用户
+### 方式一：自动全局安装（推荐）
 
 直接告诉 Claude：
 
 ```
-请安装 https://github.com/410417122/ashare-ai
+请全局安装 https://github.com/410417122/ashare-ai
 ```
 
-就这么简单，Claude 会自动处理安装。
+Claude 会自动将插件安装到全局目录，所有项目都可以使用。
+
+### 方式二：手动全局安装
+
+```bash
+# 添加 marketplace
+claude plugin marketplace add 410417122/ashare-ai
+
+# 安装插件（默认为全局安装）
+claude plugin install ashare-plugin@ashare-plugins
+```
+
+安装后，在任何项目中都可以使用 `/ashare` skill。
+
+### 更新插件
+
+```bash
+# 更新 marketplace
+claude plugin marketplace update ashare-plugins
+
+# 更新插件
+claude plugin update ashare-plugin@ashare-plugins
+```
 
 ## 功能特性
 
