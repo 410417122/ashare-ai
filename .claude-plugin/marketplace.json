@@ -1,17 +1,17 @@
 {
-  "name": "finlab-plugins",
+  "name": "ashare-plugins",
   "owner": {
-    "name": "FinLab Community",
-    "email": "support@finlab.tw"
+    "name": "AShare Community",
+    "email": "410417122@qq.com"
   },
   "plugins": [
     {
-      "name": "finlab-plugin",
-      "source": "./finlab-plugin",
-      "description": "FinLab quantitative trading skills for Taiwan stock market (台股) - includes strategy development, backtesting, data analysis, and factor research",
+      "name": "ashare-plugin",
+      "source": "./ashare-plugin",
+      "description": "A股量化交易 Skill - 使用 Tushare Pro 获取数据，Backtrader 进行回测",
       "version": "1.0.0",
       "author": {
-        "name": "FinLab Community"
+        "name": "AShare Community"
       }
     }
   ]
